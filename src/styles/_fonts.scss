@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'Unbounded-fallback';
+	size-adjust: 131.9%;
+	src: local('Arial');
+}
+
+/* unbounded-900 - latin */
+@font-face {
+	font-display: swap;
+	font-family: 'Unbounded';
+	font-style: normal;
+	font-weight: 900;
+	src: local(''), url('../fonts/u-900.woff2') format('woff2'), url('../fonts/u-900.woff') format('woff');
+}

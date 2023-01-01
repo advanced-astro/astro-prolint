@@ -1,0 +1,29 @@
+ul {
+	padding-inline-start: 0;
+}
+
+/* Antialiased Text */
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Mobile WebKit */
+
+body {
+	min-height: available;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+	width: 0.3rem;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-primary);
+	border-radius: 0;
+}

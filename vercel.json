@@ -1,0 +1,6 @@
+{
+	"framework": "astro",
+	"buildCommand": "astro build",
+	"devCommand": "astro dev",
+	"installCommand": "pnpm install"
+}

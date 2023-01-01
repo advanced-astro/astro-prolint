@@ -1,0 +1,38 @@
+html {
+	font-family: system-ui, sans-serif;
+	background: linear-gradient(
+		90deg,
+		hsl(158, 100%, 67%),
+		hsl(167, 99%, 59%),
+		hsl(179, 100%, 49%),
+		hsl(184, 100%, 50%),
+		hsl(192, 100%, 65%),
+		hsl(220, 100%, 83%),
+		hsl(265, 100%, 86%),
+		hsl(276, 100%, 85%)
+	);
+}
+code {
+	font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
+		monospace;
+}
+
+main,
+footer {
+	margin: auto;
+	padding: 1.5rem;
+	max-width: 60ch;
+}
+
+footer {
+	bottom: 0px;
+	position: absolute;
+}
+
+.text-gradient {
+	background-image: var(--accent-gradient);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 400%;
+	background-position: 0%;
+}

@@ -17,14 +17,16 @@ code {
 		monospace;
 }
 
-main,
-footer {
+main {
 	margin: auto;
 	padding: 1.5rem;
-	max-width: 60ch;
+	max-width: 60vw;
 }
 
 footer {
+	margin: auto;
+	padding: 1.5rem;
+	max-width: 30vw;
 	bottom: 0px;
 	position: absolute;
 }

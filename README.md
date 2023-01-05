@@ -176,3 +176,7 @@ Since we no longer use Prettier in lint-staged, we don't get formatted html and 
 
 "*.{html,json}": "prettier --write"
 ```
+
+#### Acknowledment
+
+-   <https://medium.com/tbc-engineering/why-and-how-to-lint-like-a-pro-173fc4a73899>

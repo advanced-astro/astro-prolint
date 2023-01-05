@@ -20,7 +20,7 @@ import Card from '@/components/Card.astro'
 			<Card
 				href="https://stylelint.io/user-guide/ignore-code/"
 				title="Stylelint"
-				body="Explore a galaxy of community-built starter themes."
+				body="A mighty, modern linter that helps you avoid errors and enforce conventions in your styles."
 			/>
 			<Card
 				href="https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new"
@@ -30,9 +30,7 @@ import Card from '@/components/Card.astro'
 		</ul>
 		<p class="instructions">
 			📚
-			<a href="https://medium.com/tbc-engineering/why-and-how-to-lint-like-a-pro-173fc4a73899">
-				Learn more about the implementation of this stack
-			</a>
+			<a href="https://github.com/redwerkz/astro-prolint#readme"> Learn more about the lint-stack</a>
 		</p>
 	</main>
 </Layout>
@@ -49,7 +47,7 @@ import Card from '@/components/Card.astro'
 	}
 
 	a {
-		color: red;
+		color: $color-pink;
 		font-weight: bold;
 	}
 
@@ -77,5 +75,12 @@ import Card from '@/components/Card.astro'
 
 	.instructions strong {
 		color: rgb(var(--accent));
+	}
+
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24vw, 1fr));
+		gap: 1rem 2rem;
+		padding: 0;
 	}
 </style>

@@ -5,6 +5,8 @@
 
 $color-white: hsl(0, 0%, 100%);
 $color-green: hsl(158, 100%, 67%);
+$color-pink: hsl(283, 100%, 57%);
+
 $transparent: transparent;
 
 $color-trans-gray: transparentize(black, 0.1);
@@ -18,8 +20,7 @@ $bg-gradient-6: hsl(220, 100%, 83%);
 $bg-gradient-7: hsl(265, 100%, 86%);
 $bg-gradient-8: hsl(276, 100%, 85%);
 
-$border-c: rgba(194, 38, 255, 100%);
-
+$border-c: $color-pink;
 /* colours */
 /* honey-yellow */
 $colour-brand-hue: 39;

@@ -1,49 +1,39 @@
-name: Deploy
+name: Deploy to GitHub Pages
 
 on:
+  # Trigger the workflow every time you push to the `main` branch
+  # Using a different branch name? Replace `main` with your branch’s name
   push:
-    branches:
-      - main
+    branches: [ main ]
+  # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
-  workflow_run:
-    workflows: ["Benchmark runner"]
-    branches: [main]
-    types: 
-      - completed
+  
+# Allow this job to clone the repo and create a page deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    environment: deploy
     steps:
-    - name: Checkout Commit
-      uses: actions/checkout@v3
-      with:
-          fetch-depth: 0
-    - name: Setup Node
-      uses: actions/setup-node@v3
-      with:
-        node-version: '16'
-    - name: Install pnpm
-      run: curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm@next-7
-    - name: Install dependencies
-      run: pnpm install
-    - name: Update pnpm bundle
-      run: curl -L --fail https://get.pnpm.io/v5.js > static/pnpm.js
-    - name: Update translations
-      env:
-        CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
-        CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
-      run: pnpm crowdin:sync
-    - uses: webfactory/ssh-agent@v0.7.0
-      with:
-        ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
-    - name: Release to GitHub Pages
-      env:
-        USE_SSH: true
-        GIT_USER: git
-        DEPLOYMENT_BRANCH: master
-      run: |
-        git config --global user.email "actions@github.com"
-        git config --global user.name "gh-actions"
-        pnpm run deploy
+      - name: Checkout your repository using git
+        uses: actions/checkout@v3
+      - name: Install, build, and upload your site
+        uses: withastro/action@v0
+        # with:
+            # path: . # The root location of your Astro project inside the repository. (optional)
+            # node-version: 16 # The specific version of Node that should be used to build your site. Defaults to 16. (optional)
+            # package-manager: yarn # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1

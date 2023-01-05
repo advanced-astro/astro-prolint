@@ -4,10 +4,10 @@ on:
   # Trigger the workflow every time you push to the `main` branch
   # Using a different branch name? Replace `main` with your branch’s name
   push:
-    branches: [ main ]
+    branches: [main]
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
-  
+
 # Allow this job to clone the repo and create a page deployment
 permissions:
   contents: read
@@ -18,10 +18,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    
       - name: Checkout your repository using git
         uses: actions/checkout@v3
-        
+
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
@@ -29,7 +28,7 @@ jobs:
 
       - name: Install, build, and upload your site
         uses: withastro/action@v0
- 
+
   deploy:
     needs: build
     runs-on: ubuntu-latest

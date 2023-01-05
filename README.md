@@ -56,8 +56,123 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 ## Installation
 
-`pnpx create-astro@latest <foldername>`
+`pnpm dlx create-astro@latest <foldername>`
 
 ```bash
-pnpm i -D @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint eslint-config-airbnb-typescript eslint-plugin-import husky lint-staged prettier stylelint stylelint stylelint-config-standard stylelint-config-sass-guidelines stylelint-prettier stylelint-config-prettier
+pnpm i -D @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint eslint-plugin-prettier eslint-plugin-import husky lint-staged prettier stylelint stylelint stylelint-config-standard stylelint-config-recommended-scss stylelint-prettier stylelint-config-prettier
+```
+
+### Prettier
+
+`pnpm i -D prettier`
+
+```javascript
+[.prettierrc.js]
+
+module.exports = {
+    plugins: [require.resolve('prettier-plugin-astro')],
+    overrides: [
+        {
+            files: '*.astro',
+            options: {
+                parser: 'astro'
+            }
+        }
+    ],
+    singleQuote: true,
+    semi: false,
+    trailingComma: 'none'
+}
+```
+
+### Husky
+
+`pnpm i -D husky`
+`pnpm dlx husky add .husky/pre-commit "pnpm dlx prettier --cache --write --plugin-search-dir=. ."`
+
+### Lint-Staged
+
+`pnpm i -D lint-staged`
+`pnpm dlx lint-staged`
+
+### ESLint
+
+`pnpm i -D eslint`
+
+And now for tssupport
+
+`pnpm i -D @typescript-eslint/parser @typescript-eslint/eslint-plugin`
+
+```javascript
+[.eslintrc.js]
+
+module.exports = {
+  env: {
+    node: true,
+    browser: true,
+    es2021: true,
+  },
+  parserOptions: {
+    sourceType: 'module',
+  },
+  extends: ['plugin:prettier/recommended'],
+  rules: {
+    'prettier/prettier': 'warn',
+  },
+  overrides: [
+    {
+      files: '*.ts',
+      parser: '@typescript-eslint/parser',
+      plugins: ['@typescript-eslint'],
+      parserOptions: {
+        project: 'tsconfig.json',
+      },
+      extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        'plugin:prettier/recommended',
+      ],
+      rules: {
+        'no-plusplus': 'off',
+        'no-underscore-dangle': 'off',
+        'import/prefer-default-export': 'off',
+        'prettier/prettier': 'warn',
+      },
+    },
+  ],
+};
+```
+
+### Stylelint
+
+`pnpm i -D stylelint stylelint-config-standard`
+
+For SCSS `stylelint-config-recommended-scss`
+
+and for Prettier `npm i -D stylelint-prettier stylelint-config-prettier`
+
+```javascript
+[.stylelintrc.js]
+
+module.exports = {
+  extends: [
+    'stylelint-config-standard',
+    'stylelint-config-recommended-scss',
+    'stylelint-prettier/recommended',
+  ],
+};
+```
+
+### package.json
+
+```json
+"lint-staged": {
+  "*.{js,ts}": "eslint --fix",
+  "*.{css,scss}": "stylelint --fix"
+}
+Since we no longer use Prettier in lint-staged, we don't get formatted html and json files, so we have to add this line:
+
+"*.{html,json}": "prettier --write"
 ```

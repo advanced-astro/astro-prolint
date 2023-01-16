@@ -1,86 +1,87 @@
 ---
-import Layout from '@/layouts/Layout.astro'
-import Card from '@/components/Card.astro'
+import Layout from '../layouts/Layout.astro'
+import Card from '../components/Card.astro'
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<h1>Why& How2 <span class="text-gradient">Lint like a PRO</span></h1>
+		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
 		<p class="instructions">
-			"Avoid stress with <a href="https://developerexperience.io/articles/linting">Linter</a>! Let it analyze your code
-			and find bugs and stylistic errors. Linter should be your best friend."
+			To get started, open the directory <code>src/pages</code> in your project.<br />
+			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
-				href="https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new"
-				title="ESLint"
-				body="Find and fix problems in your JavaScript code."
-			/>
-			<Card href="https://prettier.io/docs/en/options.html" title="Prettier" body="Opinionated code formatter." />
-			<Card
-				href="https://stylelint.io/user-guide/ignore-code/"
-				title="Stylelint"
-				body="A mighty, modern linter that helps you avoid errors and enforce conventions in your styles."
+				href="https://docs.astro.build/"
+				title="Documentation"
+				body="Learn how Astro works and explore the official API docs."
 			/>
 			<Card
-				href="https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new"
-				title="Editorconfig"
-				body="Find and fix problems in your JavaScript code."
+				href="https://astro.build/integrations/"
+				title="Integrations"
+				body="Supercharge your project with new frameworks and libraries."
+			/>
+			<Card
+				href="https://astro.build/themes/"
+				title="Themes"
+				body="Explore a galaxy of community-built starter themes."
+			/>
+			<Card
+				href="https://astro.build/chat/"
+				title="Community"
+				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
-		<p class="instructions">
-			📚
-			<a href="https://github.com/redwerkz/astro-prolint#readme"> Learn more about the lint-stack</a>
-		</p>
 	</main>
 </Layout>
 
 <style lang="scss">
-	@import '../styles/vars';
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
 
 	h1 {
-		font-family: $font-stack;
-		font-size: 4rem;
-		font-weight: 900;
-		line-height: 1;
+		font-size: 3rem;
+		font-weight: 800;
 		margin: 0;
 	}
 
-	a {
-		color: $color-pink;
-		font-weight: bold;
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
 	}
 
 	.instructions {
-		background-color: black;
 		line-height: 1.6;
-		color: greenyellow;
 		margin: 1rem 0;
-		border: 4px solid white;
-		box-shadow: white;
-		padding: 1rem 2rem;
-		border-radius: 1rem;
-		border-color: white;
-		transform: translateX(-2rem);
-	}
+		border: 1px solid rgba(var(--accent) / 25%);
+		background-color: hsl(0deg 0% 100%);
+		padding: 1rem;
+		border-radius: 0.4rem;
 
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
+		code {
+			font-size: 0.875em;
+			font-weight: bold;
+			background: rgba(var(--accent) / 12%);
+			color: rgb(var(--accent));
+			border-radius: 4px;
+			padding: 0.3em 0.45em;
+		}
 
-	.instructions strong {
-		color: rgb(var(--accent));
+		strong {
+			color: rgb(var(--accent));
+		}
 	}
 
 	.link-card-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24vw, 1fr));
-		gap: 1rem 2rem;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
 		padding: 0;
 	}
 </style>

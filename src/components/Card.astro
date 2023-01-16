@@ -1,22 +1,18 @@
 ---
-import Icon from 'astro-icon'
-
 export interface Props {
 	title: string
 	body: string
 	href: string
-	icon?: string
 }
 
-const { href, title, icon = title.toLowerCase(), body } = Astro.props
+const { href, title, body } = Astro.props
 ---
 
 <li class="link-card">
-	<Icon name={'logos:' + icon} />
 	<a href={href}>
 		<h2>
 			{title}
-			<!-- <span>&rarr;</span> -->
+			<span>&rarr;</span>
 		</h2>
 		<p>
 			{body}
@@ -25,56 +21,47 @@ const { href, title, icon = title.toLowerCase(), body } = Astro.props
 </li>
 
 <style lang="scss">
-	@import '../styles/vars';
-
 	.link-card {
-		background-color: $color-white;
-		// background-image: var(--accent-gradient);
-		background-position: 100%;
-		background-size: 400%;
-		border-color: #222;
-		border-radius: 0.5rem;
-		border-style: solid;
-		border-width: 4px;
-		box-shadow: -8px 8px 0 0 black;
+		list-style: none;
 		display: flex;
-		margin-bottom: 1rem;
-		padding: 2rem;
-		// transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-	}
+		padding: 0.15rem;
+		background-color: hsl(0deg 0% 100%);
+		background-image: var(--accent-gradient);
+		background-size: 400%;
+		border-radius: 0.5rem;
+		background-position: 100%;
+		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+		box-shadow: 0 4px 6px -1px hsla(0deg 0% 0% / 10%), 0 2px 4px -2px hsla(0deg 0% 0% / 10%);
 
-	.link-card > a {
-		// background-color: #white;
-		border-radius: 0.35rem;
-		// color: hwb(0deg 7% 93% / 0%);
-		line-height: 1.4;
-		opacity: 0.8;
-		padding: 1rem 1.3rem;
-		text-decoration: none;
-		width: 100%;
+		> a {
+			width: 100%;
+			text-decoration: none;
+			line-height: 1.4;
+			padding: 1rem 1.3rem;
+			border-radius: 0.35rem;
+			color: hsl(0deg 0% 7%);
+			background-color: hsl(0deg 0% 100%);
+			opacity: 0.8;
+		}
 	}
 
 	h2 {
-		font-size: 1.25rem;
 		margin: 0;
-		// transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+		font-size: 1.25rem;
+		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 	}
 
 	p {
-		color: #444;
-		margin-bottom: 0;
 		margin-top: 0.5rem;
+		margin-bottom: 0;
+		color: hsl(0deg 0% 27%);
 	}
 
 	.link-card:is(:hover, :focus-within) {
 		background-position: 0;
-	}
 
-	.link-card:is(:hover, :focus-within) h2 {
-		// color: rgb(var(--accent));
-	}
-
-	[astro-icon] {
-		width: 15rem;
+		h2 {
+			color: rgb(var(--accent));
+		}
 	}
 </style>

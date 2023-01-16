@@ -1,39 +1,46 @@
 {
-	"name": "@example/astro-prolint",
+	"name": "astro-lintlapro",
 	"type": "module",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"private": true,
 	"scripts": {
 		"astro": "astro",
 		"build": "astro check && tsc --noEmit && astro build",
-		"check": "astro check && npm run prettier:check",
+		"check": "astro check && pnpm prettier:check",
 		"dev": "astro dev",
 		"prepare": "husky install",
 		"preview": "astro preview",
 		"start": "astro dev",
-		"lint:scss": "stylelint \"src/**/*.{astro,scss}\"",
+		"lint:scss": "stylelint \"src/**/*.{astro,scss,svelte}\"",
 		"prettier:check": "prettier --cache --check --plugin-search-dir=. .",
 		"format": "prettier --cache --write --plugin-search-dir=. ."
 	},
 	"lint-staged": {
 		"*.{js,ts}": "eslint --fix",
 		"*.{css,scss}": "stylelint --fix",
-		"*.{html,json}": "prettier --cache --write --plugin-search-dir=. ."
+		"*.{html,json}": "prettier --write"
 	},
 	"stackblitz": {
-		"startCommand": "npm start"
+		"startCommand": "pnpm start"
 	},
 	"devDependencies": {
+		"@types/node": "^18.11.18",
 		"@typescript-eslint/eslint-plugin": "^5.48.1",
 		"@typescript-eslint/parser": "^5.48.1",
 		"astro": "^1.9.2",
+		"astro-analytics": "^2.5.1",
+		"astro-emoji": "^1.2.0",
 		"astro-icon": "^0.8.0",
+		"autoprefixer": "^10.4.13",
 		"eslint": "^8.32.0",
 		"eslint-config-prettier": "^8.6.0",
 		"eslint-plugin-import": "^2.27.4",
 		"eslint-plugin-prettier": "^4.2.1",
 		"husky": "^8.0.3",
 		"lint-staged": "^13.1.0",
+		"open-props": "^1.5.3",
+		"open-props-scss": "^0.4.1",
+		"postcss": "^8.4.21",
 		"postcss-html": "^1.5.0",
 		"prettier": "^2.8.3",
 		"sass": "^1.57.1",

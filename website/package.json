@@ -18,7 +18,7 @@
 	"lint-staged": {
 		"*.{js,ts}": "eslint --fix",
 		"*.{css,scss}": "stylelint --fix",
-		"*.{html,json}": "prettier --write"
+		"*.{html,json}": "npm run format"
 	},
 	"stackblitz": {
 		"startCommand": "pnpm start"

@@ -8,17 +8,11 @@
 		"build": "astro check && tsc --noEmit && astro build",
 		"check": "astro check && pnpm prettier:check",
 		"dev": "astro dev",
-		"prepare": "husky install",
 		"preview": "astro preview",
 		"start": "astro dev",
 		"lint:scss": "stylelint \"src/**/*.{astro,scss,svelte}\"",
 		"prettier:check": "prettier --cache --check --plugin-search-dir=. .",
 		"format": "prettier --cache --write --plugin-search-dir=. ."
-	},
-	"lint-staged": {
-		"*.{js,ts}": "eslint --fix",
-		"*.{css,scss}": "stylelint --fix",
-		"*.{html,json}": "npm run format"
 	},
 	"stackblitz": {
 		"startCommand": "pnpm start"
@@ -36,8 +30,6 @@
 		"eslint-config-prettier": "^8.6.0",
 		"eslint-plugin-import": "^2.27.4",
 		"eslint-plugin-prettier": "^4.2.1",
-		"husky": "^8.0.3",
-		"lint-staged": "^13.1.0",
 		"open-props": "^1.5.3",
 		"open-props-scss": "^0.4.1",
 		"postcss": "^8.4.21",

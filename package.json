@@ -25,7 +25,7 @@
 	},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.48.1",
-		"@typescript-eslint/parser": "^5.48.1",
+		"@typescript-eslint/parser": "^5.49.0",
 		"astro": "^2.0.0",
 		"astro-icon": "^0.8.0",
 		"eslint": "^8.32.0",

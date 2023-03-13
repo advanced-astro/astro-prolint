@@ -24,7 +24,7 @@
 		"startCommand": "npm start"
 	},
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^5.52.0",
+		"@typescript-eslint/eslint-plugin": "^5.55.0",
 		"@typescript-eslint/parser": "^5.52.0",
 		"astro": "^2.0.13",
 		"astro-icon": "^0.8.0",

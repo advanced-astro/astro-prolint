@@ -14,7 +14,7 @@ specifiers:
   eslint-plugin-import: ^2.27.4
   eslint-plugin-prettier: ^4.2.1
   open-props: ^1.5.3
-  open-props-scss: ^0.4.1
+  open-props-scss: ^0.5.0
   postcss: ^8.4.21
   postcss-html: ^1.5.0
   prettier: ^2.8.3
@@ -40,7 +40,7 @@ devDependencies:
   eslint-plugin-import: 2.27.5_a7er6olmtneep4uytpot6gt7wu
   eslint-plugin-prettier: 4.2.1_eqzx3hpkgx5nnvxls3azrcc7dm
   open-props: 1.5.6
-  open-props-scss: 0.4.1
+  open-props-scss: 0.5.0
   postcss: 8.4.21
   postcss-html: 1.5.0
   prettier: 2.8.4
@@ -3668,8 +3668,8 @@ packages:
       mimic-fn: 4.0.0
     dev: true
 
-  /open-props-scss/0.4.1:
-    resolution: {integrity: sha512-Zf3vSM3zQ0eaICdqrChIqHzXPF0Qs9RQ+QgU8AheXFLwM9NXQdkx+9eJGJSJYBiWYZBS0nLwz1pcdhDqHEZU8A==}
+  /open-props-scss/0.5.0:
+    resolution: {integrity: sha512-AJLpVr+FZp/FrQcj3vWYhUz9WAI2YSgRHJphQVBjuHu3/a9gatKY+zYz/nUZrSIPh56JLFgV52HJ2mJKb5xRZg==}
     dev: true
 
   /open-props/1.5.6:

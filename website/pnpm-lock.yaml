@@ -22,7 +22,7 @@ specifiers:
   stylelint: ^15.0.0
   stylelint-config-prettier: ^9.0.4
   stylelint-config-recommended-scss: ^12.0.0
-  stylelint-config-standard: ^31.0.0
+  stylelint-config-standard: ^34.0.0
   stylelint-prettier: ^3.0.0
   typescript: ^5.0.0
 
@@ -48,7 +48,7 @@ devDependencies:
   stylelint: 15.3.0
   stylelint-config-prettier: 9.0.5_stylelint@15.3.0
   stylelint-config-recommended-scss: 12.0.0_xd434hbhlikjpobg3rgppuzh3e
-  stylelint-config-standard: 31.0.0_stylelint@15.3.0
+  stylelint-config-standard: 34.0.0_stylelint@15.3.0
   stylelint-prettier: 3.0.0_tdlhy4ikwtqxumzq5uc5mbnjlm
   typescript: 5.1.6
 
@@ -4500,14 +4500,6 @@ packages:
       stylelint-scss: 5.0.1_stylelint@15.3.0
     dev: true
 
-  /stylelint-config-recommended/11.0.0_stylelint@15.3.0:
-    resolution: {integrity: sha512-SoGIHNI748OCZn6BxFYT83ytWoYETCINVHV3LKScVAWQQauWdvmdDqJC5YXWjpBbxg2E761Tg5aUGKLFOVhEkA==}
-    peerDependencies:
-      stylelint: ^15.3.0
-    dependencies:
-      stylelint: 15.3.0
-    dev: true
-
   /stylelint-config-recommended/12.0.0_stylelint@15.3.0:
     resolution: {integrity: sha512-x6x8QNARrGO2sG6iURkzqL+Dp+4bJorPMMRNPScdvaUK8PsynriOcMW7AFDKqkWAS5wbue/u8fUT/4ynzcmqdQ==}
     peerDependencies:
@@ -4516,13 +4508,23 @@ packages:
       stylelint: 15.3.0
     dev: true
 
-  /stylelint-config-standard/31.0.0_stylelint@15.3.0:
-    resolution: {integrity: sha512-CUGAmtROCvX0YgMY2+6P9tqSkHj5z/75XxrQ8bGxvkCa1xYdGDx4poM0pa7cXc3s74/PZLJH/okxZZouRfOSGw==}
+  /stylelint-config-recommended/13.0.0_stylelint@15.3.0:
+    resolution: {integrity: sha512-EH+yRj6h3GAe/fRiyaoO2F9l9Tgg50AOFhaszyfov9v6ayXJ1IkSHwTxd7lB48FmOeSGDPLjatjO11fJpmarkQ==}
+    engines: {node: ^14.13.1 || >=16.0.0}
     peerDependencies:
-      stylelint: ^15.3.0
+      stylelint: ^15.10.0
     dependencies:
       stylelint: 15.3.0
-      stylelint-config-recommended: 11.0.0_stylelint@15.3.0
+    dev: true
+
+  /stylelint-config-standard/34.0.0_stylelint@15.3.0:
+    resolution: {integrity: sha512-u0VSZnVyW9VSryBG2LSO+OQTjN7zF9XJaAJRX/4EwkmU0R2jYwmBSN10acqZisDitS0CLiEiGjX7+Hrq8TAhfQ==}
+    engines: {node: ^14.13.1 || >=16.0.0}
+    peerDependencies:
+      stylelint: ^15.10.0
+    dependencies:
+      stylelint: 15.3.0
+      stylelint-config-recommended: 13.0.0_stylelint@15.3.0
     dev: true
 
   /stylelint-prettier/3.0.0_tdlhy4ikwtqxumzq5uc5mbnjlm:

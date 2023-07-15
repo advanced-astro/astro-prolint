@@ -24,28 +24,28 @@
 		"startCommand": "npm start"
 	},
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^5.52.0",
-		"@typescript-eslint/parser": "^5.52.0",
-		"astro": "^2.0.13",
-		"astro-icon": "^0.8.0",
-		"eslint": "^8.34.0",
-		"eslint-config-prettier": "^8.6.0",
+		"@typescript-eslint/eslint-plugin": "^6.0.0",
+		"@typescript-eslint/parser": "^6.0.0",
+		"astro": "^2.8.3",
+		"astro-icon": "^0.8.1",
+		"eslint": "^8.45.0",
+		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-import": "^2.27.5",
-		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-prettier": "^5.0.0",
 		"husky": "^8.0.3",
-		"lint-staged": "^13.1.2",
+		"lint-staged": "^13.2.3",
 		"postcss-html": "^1.5.0",
-		"prettier": "^2.8.4",
-		"sass": "^1.58.2",
-		"stylelint": "^15.1.0",
+		"prettier": "^3.0.0",
+		"sass": "^1.63.6",
+		"stylelint": "^15.10.1",
 		"stylelint-config-html": "^1.1.0",
-		"stylelint-config-prettier": "^9.0.0",
-		"stylelint-config-recommended-scss": "^9.0.1",
-		"stylelint-prettier": "^3.0.0",
-		"typescript": "^4.9.5"
+		"stylelint-config-prettier": "^9.0.5",
+		"stylelint-config-recommended-scss": "^12.0.0",
+		"stylelint-prettier": "^4.0.0",
+		"typescript": "^5.1.6"
 	},
 	"dependencies": {
-		"@tinkoff/stylelint-config": "^1.46.2",
-		"stylelint-config-standard": "^31.0.0"
+		"@tinkoff/stylelint-config": "^1.52.1",
+		"stylelint-config-standard": "^34.0.0"
 	}
 }

@@ -17,7 +17,7 @@ specifiers:
   open-props-scss: ^0.4.1
   postcss: ^8.4.21
   postcss-html: ^1.5.0
-  prettier: ^2.8.3
+  prettier: ^3.0.0
   sass: ^1.57.1
   stylelint: ^15.0.0
   stylelint-config-prettier: ^9.0.4
@@ -38,18 +38,18 @@ devDependencies:
   eslint: 8.36.0
   eslint-config-prettier: 8.7.0_eslint@8.36.0
   eslint-plugin-import: 2.27.5_a7er6olmtneep4uytpot6gt7wu
-  eslint-plugin-prettier: 4.2.1_eqzx3hpkgx5nnvxls3azrcc7dm
+  eslint-plugin-prettier: 4.2.1_rxerbuqskxpi4erqa65tlt5nzm
   open-props: 1.5.6
   open-props-scss: 0.4.1
   postcss: 8.4.21
   postcss-html: 1.5.0
-  prettier: 2.8.4
+  prettier: 3.0.0
   sass: 1.59.3
   stylelint: 15.3.0
   stylelint-config-prettier: 9.0.5_stylelint@15.3.0
   stylelint-config-recommended-scss: 12.0.0_xd434hbhlikjpobg3rgppuzh3e
   stylelint-config-standard: 34.0.0_stylelint@15.3.0
-  stylelint-prettier: 3.0.0_tdlhy4ikwtqxumzq5uc5mbnjlm
+  stylelint-prettier: 3.0.0_7neaqkyu3hiwbnnbrjmzsqpcau
   typescript: 5.1.6
 
 packages:
@@ -1987,7 +1987,7 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-prettier/4.2.1_eqzx3hpkgx5nnvxls3azrcc7dm:
+  /eslint-plugin-prettier/4.2.1_rxerbuqskxpi4erqa65tlt5nzm:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -2000,7 +2000,7 @@ packages:
     dependencies:
       eslint: 8.36.0
       eslint-config-prettier: 8.7.0_eslint@8.36.0
-      prettier: 2.8.4
+      prettier: 3.0.0
       prettier-linter-helpers: 1.0.0
     dev: true
 
@@ -3927,6 +3927,12 @@ packages:
     hasBin: true
     dev: true
 
+  /prettier/3.0.0:
+    resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
+
   /prismjs/1.29.0:
     resolution: {integrity: sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==}
     engines: {node: '>=6'}
@@ -4527,14 +4533,14 @@ packages:
       stylelint-config-recommended: 13.0.0_stylelint@15.3.0
     dev: true
 
-  /stylelint-prettier/3.0.0_tdlhy4ikwtqxumzq5uc5mbnjlm:
+  /stylelint-prettier/3.0.0_7neaqkyu3hiwbnnbrjmzsqpcau:
     resolution: {integrity: sha512-kIks1xw6np0zElokMT2kP6ar3S4MBoj6vUtPJuND1pFELMpZxVS/0uHPR4HDAVn0WAD3I5oF0IA3qBFxBpMkLg==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       prettier: '>=2.0.0'
       stylelint: '>=14.0.0'
     dependencies:
-      prettier: 2.8.4
+      prettier: 3.0.0
       prettier-linter-helpers: 1.0.0
       stylelint: 15.3.0
     dev: true

@@ -19,8 +19,8 @@
 	},
 	"devDependencies": {
 		"@types/node": "^18.11.18",
-		"@typescript-eslint/eslint-plugin": "^5.48.1",
-		"@typescript-eslint/parser": "^5.48.1",
+		"@typescript-eslint/eslint-plugin": "^6.0.0",
+		"@typescript-eslint/parser": "^6.0.0",
 		"astro": "^2.0.0",
 		"astro-analytics": "^2.5.1",
 		"astro-emoji": "^1.2.0",

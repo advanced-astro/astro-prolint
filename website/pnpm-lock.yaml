@@ -23,7 +23,7 @@ specifiers:
   stylelint-config-prettier: ^9.0.4
   stylelint-config-recommended-scss: ^12.0.0
   stylelint-config-standard: ^34.0.0
-  stylelint-prettier: ^3.0.0
+  stylelint-prettier: ^4.0.0
   typescript: ^5.0.0
 
 devDependencies:
@@ -49,7 +49,7 @@ devDependencies:
   stylelint-config-prettier: 9.0.5_stylelint@15.3.0
   stylelint-config-recommended-scss: 12.0.0_xd434hbhlikjpobg3rgppuzh3e
   stylelint-config-standard: 34.0.0_stylelint@15.3.0
-  stylelint-prettier: 3.0.0_7neaqkyu3hiwbnnbrjmzsqpcau
+  stylelint-prettier: 4.0.0_7neaqkyu3hiwbnnbrjmzsqpcau
   typescript: 5.1.6
 
 packages:
@@ -4533,12 +4533,12 @@ packages:
       stylelint-config-recommended: 13.0.0_stylelint@15.3.0
     dev: true
 
-  /stylelint-prettier/3.0.0_7neaqkyu3hiwbnnbrjmzsqpcau:
-    resolution: {integrity: sha512-kIks1xw6np0zElokMT2kP6ar3S4MBoj6vUtPJuND1pFELMpZxVS/0uHPR4HDAVn0WAD3I5oF0IA3qBFxBpMkLg==}
+  /stylelint-prettier/4.0.0_7neaqkyu3hiwbnnbrjmzsqpcau:
+    resolution: {integrity: sha512-hYlObunQiSzc5XRttNiDyaY1W7ytW/AJtEbaDxy0rr4ioQvko+cjAgSGrRbz0iRB+yc6jiMrUmHcGkvFb+zDqw==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
-      prettier: '>=2.0.0'
-      stylelint: '>=14.0.0'
+      prettier: '>=3.0.0'
+      stylelint: '>=15.8.0'
     dependencies:
       prettier: 3.0.0
       prettier-linter-helpers: 1.0.0

@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@tinkoff/stylelint-config':
-    specifier: ^1.52.1
-    version: 1.52.1
+    specifier: ^2.0.0
+    version: 2.0.0
   stylelint-config-standard:
     specifier: ^34.0.0
     version: 34.0.0(stylelint@15.10.2)
@@ -948,8 +948,8 @@ packages:
       tslib: 2.6.0
     dev: true
 
-  /@tinkoff/stylelint-config@1.52.1:
-    resolution: {integrity: sha512-3SNlBeNMYI+sokK1IehTFJVrexRfC3sqsuA/15R0P+YP+gCMr5gXgY85CdFa/lBykwzSl3N/b/gTsxZ5ExywTg==}
+  /@tinkoff/stylelint-config@2.0.0:
+    resolution: {integrity: sha512-4c52do9zxl96uBpHj9NdAqCTWYplTIka621r4ItVuBFJe36yCddEV54S0GkhWGV6tUghUxkJOGTcaYTKOloMTw==}
     dependencies:
       postcss: 8.4.31
       postcss-less: 6.0.0(postcss@8.4.31)

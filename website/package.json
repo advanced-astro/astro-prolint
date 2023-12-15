@@ -21,7 +21,7 @@
 		"@types/node": "^18.11.18",
 		"@typescript-eslint/eslint-plugin": "^6.0.0",
 		"@typescript-eslint/parser": "^6.0.0",
-		"astro": "^3.0.0",
+		"astro": "^4.0.0",
 		"astro-analytics": "^2.5.1",
 		"astro-emoji": "^1.2.0",
 		"astro-icon": "^0.8.0",

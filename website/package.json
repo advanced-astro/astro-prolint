@@ -27,7 +27,7 @@
 		"astro-icon": "^0.8.0",
 		"autoprefixer": "^10.4.13",
 		"eslint": "^8.32.0",
-		"eslint-config-prettier": "^8.6.0",
+		"eslint-config-prettier": "^9.0.0",
 		"eslint-plugin-import": "^2.27.4",
 		"eslint-plugin-prettier": "^5.0.0",
 		"open-props": "^1.5.3",

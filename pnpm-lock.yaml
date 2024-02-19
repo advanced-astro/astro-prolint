@@ -21,7 +21,7 @@ devDependencies:
     version: 6.14.0(eslint@8.45.0)(typescript@5.1.6)
   astro:
     specifier: ^3.5.5
-    version: 3.5.5(sass@1.63.6)(typescript@5.1.6)
+    version: 3.5.5(sass@1.71.0)(typescript@5.1.6)
   astro-icon:
     specifier: ^0.8.1
     version: 0.8.1
@@ -50,8 +50,8 @@ devDependencies:
     specifier: ^3.0.0
     version: 3.0.0
   sass:
-    specifier: ^1.63.6
-    version: 1.63.6
+    specifier: ^1.71.0
+    version: 1.71.0
   stylelint:
     specifier: ^15.10.2
     version: 15.10.2
@@ -100,7 +100,7 @@ packages:
       astro: ^3.0.0
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 3.5.5(sass@1.63.6)(typescript@5.1.6)
+      astro: 3.5.5(sass@1.71.0)(typescript@5.1.6)
       github-slugger: 2.0.0
       import-meta-resolve: 3.1.1
       mdast-util-definitions: 6.0.0
@@ -1409,7 +1409,7 @@ packages:
       svgo: 2.8.0
     dev: true
 
-  /astro@3.5.5(sass@1.63.6)(typescript@5.1.6):
+  /astro@3.5.5(sass@1.71.0)(typescript@5.1.6):
     resolution: {integrity: sha512-zJDZhO8XheXzpqkZgBXlP8e3j8psf0A21fh5Bq4HNR6gOmgOnM62Pok3O2ClbGygabfl2Preeun0pBRFn5+y0A==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -1467,7 +1467,7 @@ packages:
       tsconfck: 3.0.0(typescript@5.1.6)
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.5.0(sass@1.63.6)
+      vite: 4.5.0(sass@1.71.0)
       vitefu: 0.2.4(vite@4.5.0)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -5064,8 +5064,8 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
-  /sass@1.63.6:
-    resolution: {integrity: sha512-MJuxGMHzaOW7ipp+1KdELtqKbfAWbH7OLIdoSMnVe3EXPMTmxTmlaZDCTsgIpPCs3w99lLo9/zDKkOrJuT5byw==}
+  /sass@1.71.0:
+    resolution: {integrity: sha512-HKKIKf49Vkxlrav3F/w6qRuPcmImGVbIXJ2I3Kg0VMA+3Bav+8yE9G5XmP5lMj6nl4OlqbPftGAscNaNu28b8w==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -6099,7 +6099,7 @@ packages:
       vfile-message: 4.0.2
     dev: true
 
-  /vite@4.5.0(sass@1.63.6):
+  /vite@4.5.0(sass@1.71.0):
     resolution: {integrity: sha512-ulr8rNLA6rkyFAlVWw2q5YJ91v098AFQ2R0PRFwPzREXOUJQPtFUG0t+/ZikhaOCDqFoDhN6/v8Sq0o4araFAw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -6130,7 +6130,7 @@ packages:
       esbuild: 0.18.13
       postcss: 8.4.31
       rollup: 3.29.4
-      sass: 1.63.6
+      sass: 1.71.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -6143,7 +6143,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.5.0(sass@1.63.6)
+      vite: 4.5.0(sass@1.71.0)
     dev: true
 
   /web-namespaces@2.0.1:

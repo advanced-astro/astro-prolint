@@ -45,8 +45,8 @@ devDependencies:
     specifier: ^1.5.3
     version: 1.5.6
   open-props-scss:
-    specifier: ^0.6.0
-    version: 0.6.0
+    specifier: ^0.7.0
+    version: 0.7.0
   postcss:
     specifier: ^8.4.21
     version: 8.4.21
@@ -4271,8 +4271,8 @@ packages:
       mimic-fn: 4.0.0
     dev: true
 
-  /open-props-scss@0.6.0:
-    resolution: {integrity: sha512-qPoCn0YURqs0pHjIaHs/uQyDpWxdYdPTTxhb69kq7OgrlX31fKXpjDxUQXBdxEGN0E4y0t17a0y+lV48yJaDeQ==}
+  /open-props-scss@0.7.0:
+    resolution: {integrity: sha512-6Qg8Hjvk8aE//3o+LeawK+EsiRMyiKBp2Yx5QGQBRppEKxTZ/wWlu4Yz4p2UPQvutw04GmLffBTYxVOWyoi+nQ==}
     dev: true
 
   /open-props@1.5.6:
